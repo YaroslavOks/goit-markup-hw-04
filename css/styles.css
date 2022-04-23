@@ -106,8 +106,12 @@ img {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
 
   background-color: var(--hero-footer-bcg-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/background-hero-foto.jpeg);
+  /* background-size: 1600px; */
   text-align: center;
 }
 .hero-header {
@@ -148,6 +152,29 @@ img {
 }
 .peculiarities-list {
   display: flex;
+}
+.peculiarities-item::before {
+  content: '';
+  display: block;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--buton-bcg-color);
+  border-radius: 4px;
+}
+.peculiarities-item.icon-antenna::before {
+  background-image: url(../img/icon-antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../img/icon-clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(../img/icon-diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../img/icon-astronaut.svg);
 }
 .peculiarities-item + .peculiarities-item {
   margin-left: 30px;
