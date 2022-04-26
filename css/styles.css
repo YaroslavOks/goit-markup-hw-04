@@ -11,6 +11,7 @@
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --hero-footer-bcg-color: #2f303a;
   --buton-bcg-color: #f5f4fa;
+  --icons-color: #afb1b8;
 }
 /* Главная страница */
 body {
@@ -26,6 +27,21 @@ body {
   padding: 0px 15px;
   margin: 0 auto;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .list {
   list-style: none;
   padding: 0;
@@ -77,7 +93,9 @@ img {
   color: var(--tittle-text-color);
 }
 .nav-list-link:hover,
-.nav-list-link:focus {
+.nav-list-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--acent-text-color);
 }
 .nav-list .current {
@@ -90,17 +108,21 @@ img {
 .contacts-item + .contacts-item {
   margin-left: 50px;
 }
+.icons-contact-header {
+  margin-right: 10px;
+  fill: currentColor;
+}
 .contacts-link {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
   color: var(--secondary-text-color);
-}
-.contacts-link:hover,
-.contacts-link:focus {
-  color: var(--acent-text-color);
 }
 /* Hero */
 .hero {
@@ -153,31 +175,17 @@ img {
 .peculiarities-list {
   display: flex;
 }
-.peculiarities-item::before {
-  content: '';
-  display: block;
-  padding: 25px 100px;
-  margin-bottom: 30px;
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--buton-bcg-color);
-  border-radius: 4px;
-}
-.peculiarities-item.icon-antenna::before {
-  background-image: url(../img/icon-antenna.svg);
-}
-.icon-clock::before {
-  background-image: url(../img/icon-clock.svg);
-}
-.icon-diagram::before {
-  background-image: url(../img/icon-diagram.svg);
-}
-.icon-astronaut::before {
-  background-image: url(../img/icon-astronaut.svg);
-}
 .peculiarities-item + .peculiarities-item {
   margin-left: 30px;
+}
+.icons-pecularities {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+  margin-bottom: 30px;
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
 .peculiarities-item {
   justify-self: center;
@@ -230,6 +238,7 @@ img {
 }
 .command-list-participant {
   margin-left: 30px;
+  width: 270px;
 
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -252,7 +261,6 @@ img {
 
 .paticipant-name-activity {
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 .participant-name {
   margin-top: 0;
@@ -271,6 +279,92 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+.command-social-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px 30px 32px;
+}
+.command-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  fill: var(--icons-color);
+}
+.icons-social-command {
+  fill: currentColor;
+}
+.command-social-link:hover,
+.command-social-link:focus {
+  color: #ffffff;
+  background-color: var(--acent-text-color);
+}
+
+/* .command-social-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px 30px 32px;
+}
+.command-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--icons-color);
+}
+
+.icons-social-command {
+  fill: currentColor;
+}
+.command-social-link:hover,
+.command-social-link:focus {
+  color: var(--white-color);
+  background-color: var(--acent-text-color);
+} */
+/* Наши клиенты */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-tittle {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--tittle-text-color);
+}
+.clients-list {
+  display: flex;
+}
+.clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: var(--icons-color);
+}
+.clients-icon {
+  color: currentColor;
+}
+.clients-icon:hover,
+.clients-icon:focus {
+  color: var(--acent-text-color);
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
 }
 /* Футер */
 .footer {

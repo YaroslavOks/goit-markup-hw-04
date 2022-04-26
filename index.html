@@ -36,12 +36,20 @@
         </nav>
         <ul class="contacts list">
           <li class="contacts-item">
-            <a href="mailto:info@devstudio.com" class="contacts-link email link"
-              >info@devstudio.com</a
+            <a href="mailto:info@devstudio.com" class="contacts-link link">
+              <svg class="icon-envelope icons-contact-header" width="16" height="12">
+                <use href="./img/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="contacts-item">
-            <a href="tel:+380961111111" class="contacts-link phone link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="contacts-link link">
+              <svg class="icon-phone icons-contact-header" width="10" height="16">
+                <use href="./img/icons.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -57,27 +65,47 @@
       <section class="peculiarities">
         <!--Секция 2 Особенности студии -->
         <div class="container">
-          <h2 hidden>Особенности студии</h2>
+          <h2 class="visually-hidden">Особенности студии</h2>
           <ul class="peculiarities-list list">
-            <li class="peculiarities-item icon-antenna">
+            <li class="peculiarities-item">
+              <div class="icons-pecularities">
+                <svg class="icon-antenna" width="70" height="70">
+                  <use href="./img/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="peculiarities-list-tittle">Внимание к деталям</h3>
               <p class="peculiarities-list-text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="peculiarities-item icon-clock">
+            <li class="peculiarities-item">
+              <div class="icons-pecularities">
+                <svg class="icon-clock" width="70" height="70">
+                  <use href="./img/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="peculiarities-list-tittle">Пунктуальность</h3>
               <p class="peculiarities-list-text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="peculiarities-item icon-diagram">
+            <li class="peculiarities-item">
+              <div class="icons-pecularities">
+                <svg class="icon-diagram" width="70" height="70">
+                  <use href="./img/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="peculiarities-list-tittle">Планирование</h3>
               <p class="peculiarities-list-text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="peculiarities-item icon-astronaut">
+            <li class="peculiarities-item">
+              <div class="icons-pecularities">
+                <svg class="icon-astronaut" width="70" height="70">
+                  <use href="./img/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="peculiarities-list-tittle">Современные технологии</h3>
               <p class="peculiarities-list-text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -133,6 +161,36 @@
               <div class="paticipant-name-activity">
                 <h3 class="participant-name">Игорь Демьяненко</h3>
                 <p class="participant-activity">Product Designer</p>
+                <ul class="command-social-list list">
+                  <li class="command-social-item">
+                    <a href="#" class="command-social-link link">
+                      <svg class="instagram icons-social-command" width="20" height="20">
+                        <use href="./img/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="command-social-item">
+                    <a href="#" class="command-social-link link"
+                      ><svg class="twitter" width="20" height="20">
+                        <use href="./img/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="command-social-item">
+                    <a href="#" class="command-social-link link"
+                      ><svg class="facebook" width="20" height="20">
+                        <use href="./img/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="command-social-item">
+                    <a href="#" class="command-social-link link"
+                      ><svg class="linkedin" width="20" height="20">
+                        <use href="./img/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="command-list-participant">
@@ -170,6 +228,54 @@
                 <h3 class="participant-name">Михаил Ермаков</h3>
                 <p class="participant-activity">UI Designer</p>
               </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="clients">
+        <div class="container">
+          <h2 class="clients-tittle">Постоянные клиенты</h2>
+          <ul class="clients-list list">
+            <li class="clients-item">
+              <a href="#" class="clients-link link"></a
+              ><svg class="clients-icon" width="106" height="60">
+                <use href="./img/icons.svg#icon-client-one"></use>
+              </svg>
+            </li>
+            <li class="clients-item">
+              <a href="#" class="clients-link link"
+                ><svg class="clients-icon" width="106" height="60">
+                  <use href="./img/icons.svg#icon-client-two"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#" class="clients-link link"
+                ><svg class="clients-icon" width="106" height="60">
+                  <use href="./img/icons.svg#icon-client-three"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#" class="clients-link link"
+                ><svg class="clients-icon" width="106" height="60">
+                  <use href="./img/icons.svg#icon-client-four"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#" class="clients-link link"
+                ><svg class="clients-icon" width="106" height="60">
+                  <use href="./img/icons.svg#icon-client-five"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#" class="clients-link link"
+                ><svg class="clients-icon" width="106" height="60">
+                  <use href="./img/icons.svg#icon-client-six"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
