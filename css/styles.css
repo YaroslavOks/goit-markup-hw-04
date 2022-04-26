@@ -292,7 +292,7 @@ img {
   height: 44px;
   width: 44px;
   border-radius: 50%;
-  fill: var(--icons-color);
+  color: var(--icons-color);
 }
 .icons-social-command {
   fill: currentColor;
@@ -303,30 +303,6 @@ img {
   background-color: var(--acent-text-color);
 }
 
-/* .command-social-list {
-  display: flex;
-  justify-content: space-between;
-  padding: 16px 32px 30px 32px;
-}
-.command-social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: var(--icons-color);
-}
-
-.icons-social-command {
-  fill: currentColor;
-}
-.command-social-link:hover,
-.command-social-link:focus {
-  color: var(--white-color);
-  background-color: var(--acent-text-color);
-} */
 /* Наши клиенты */
 .clients {
   padding-top: 94px;
@@ -353,10 +329,12 @@ img {
   padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+.clients-link {
   color: var(--icons-color);
 }
 .clients-icon {
-  color: currentColor;
+  fill: currentColor;
 }
 .clients-icon:hover,
 .clients-icon:focus {
